@@ -1,4 +1,6 @@
 import React from "react";
+import { Route, Switch } from "react-router-dom";
+import { makeStyles } from "@material-ui/core/styles";
 import reactDOM from "react-dom";
 import{CssBaseline, Grid} from "@material-ui/core";
 import Header from "./Components/Header/Header";
@@ -8,6 +10,7 @@ import Map from "./Components/Map/Map";
 const App = () => {
     return (
         <>
+    
             <CssBaseline/>
             <Header/>
             <Grid container spacing={3} style ={{width : '100%'}}>
