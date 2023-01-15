@@ -7,14 +7,14 @@ const List = () => {
     const [type, setType] = useState('restaurants');
     const [rating, setRating] = useState('restaurants');
     const places = [
-        {name: 'cool place'},
-        {name: 'best place'},
-        {name: 'Best food'},
-        {name: 'best service'},
+        {name: 'Best Rated'},
+        {name: 'Best View'},
+        {name: 'Best Food'},
+        {name: 'Best Service'},
     ]
     return (
         <div className={classes.container}>
-            <Typography variant = "h4"> Find your Restaurants, Hotels</Typography>
+            <Typography variant = "h4"> Find your Restaurants and Hotels</Typography>
             <FormControl className={classes.formControl}>
               <InputLabel>Type</InputLabel>
               <Select value={type} onChange={(e) => setType(e.target)}>
