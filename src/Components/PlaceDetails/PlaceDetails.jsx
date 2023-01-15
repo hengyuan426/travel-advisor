@@ -1,7 +1,10 @@
 import React from "react";
-const PlaceDetails = ({place}) => {
+const PlaceDetails = ({place, onClickItem}) => {
     return (
-        <h1>{place.name}</h1>
+        <div onClick={()=>onClickItem(place)} style={{cursor:"pointer"}}>
+            {place.name}
+            
+        </div>
     );
 }
 export default PlaceDetails;
